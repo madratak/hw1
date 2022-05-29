@@ -627,6 +627,6 @@ function insertComment(event){
     fetch("fetch_or_send_comments.php?"+
     "&creator="+encodeURI(creator)+
     "&playlist="+encodeURI(titlePlaylist)+
-    "&comment"+encodeURIComponent(commentInput)).then(response=>response.json()).then(jsonViewComments);
+    "&comment="+encodeURIComponent(commentInput)).then(response=>response.json()).then(jsonViewComments);
 }
 
