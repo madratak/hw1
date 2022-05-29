@@ -1,0 +1,100 @@
+html{
+    font-size: 15px;
+    font-family: Gotham Medium, sans-serif;
+}
+
+body{
+    overflow: hidden;
+    margin: 20px 0px 0px 0px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 15px;
+    width: 25%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+section img{
+    width: 80%;
+    margin-bottom: -10px;
+}
+
+section h2{
+    margin: 15px 0px;   
+}
+
+section p {
+    text-align: center;
+}
+
+input{
+    padding: 15px 6px;
+    font-size: 15px;
+    /*border-radius: 7px;*/
+    background-color: transparent;
+    width: 94%;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    line-height: -20px;
+}
+
+form p{
+    margin: 10px 0px;
+    width: 97%;
+}
+
+input[type=submit]{
+    width: 27%;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+input[type=submit]:hover{
+    background-color: rgba(0,0,0,0.55);
+}
+
+.errore {
+    color: red;
+    font-size: 12px;
+}
+
+.hidden{
+    display: none;
+}
+
+#connected{
+    display: flex;
+    justify-content: center; 
+}
+
+#connected input[type=checkbox]{
+    width:auto;
+}
+
