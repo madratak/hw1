@@ -9,7 +9,7 @@
         if(isset($_GET["comment"])){
             if(!empty($_GET["comment"])){
                 $comment = mysqli_real_escape_string($conn,$_GET["comment"]);
-                $query = "INSERT INTO Comments(User, Playlist_creator, Playlist_name, Comment) VALUES('$user', '$creator', '$playlist', '$comment')";
+                $query = "INSERT INTO Comments(User, Playlist_creator, Playlist_name, Comment) VALUES('$user', '$creator', '$playlist', '".$comment."')";
                 mysqli_query($conn, $query) or die (mysqli_error($conn));   
             }
         }
